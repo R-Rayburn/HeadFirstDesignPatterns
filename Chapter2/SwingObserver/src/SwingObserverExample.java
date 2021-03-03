@@ -13,12 +13,15 @@ public class SwingObserverExample {
         frame = new JFrame();
 
         JButton button = new JButton("Should I do it?");
-        button.addActionListener(new AngelListener);
-        button.addActionListener(new DevilListener);
+        button.addActionListener(event ->
+                System.out.println("Don't do it, you might regret it!"));
+        button.addActionListener(event ->
+                System.out.println("Come on, do it!"));
 
         // Additional frame properties
     }
 
+    // Don't need these anymore, since we added lambdas
     class AngelListener implements ActionListener {
         public void actionPerformed(ActionEvent event) {
             System.out.println("Don't do it, you might regret it!");
