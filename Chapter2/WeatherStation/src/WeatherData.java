@@ -29,15 +29,6 @@ public class WeatherData implements Subject {
     }
 
     public void measurementsChanged() {
-        // Initial Code
-        // float temp = getTemperature();
-        // float humidity = getHumidity();
-        // float pressure = getPressure();
-
-        // currentConditionsDisplay.update(temp, humidity, pressure);
-        // statisticsDisplay.update(temp, humidity, pressure);
-        // forecastDisplay.update(temp, humidity, pressure);
-
         notifyObservers();
     }
 
