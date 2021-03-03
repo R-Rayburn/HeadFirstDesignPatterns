@@ -36,8 +36,35 @@ Strategy lets the algorithm vary independently of clients that use it.
 ## Chapter 2
 
 ### Observer Pattern
-Supposedly the most commonly used pattern,
+Defines a **one-to-many** (one subject, many observers)
+dependency between objects so that when one object
+changes state; all of its dependents are notified
+and updated automatically.\
+_Supposedly the most commonly used pattern._\
+_Real World Example: Subscription with a publisher
+(subject) and subscribers (observers)_
 
-Notes:
-- One-to-many relationship
-- loose coupling
+### Principles to know
+- Strive for loosely coupled designs between objects
+that interact.
+
+Other Notes:
+- **Loose coupling**
+  - Means there is a minimized interdependency between objects.
+  - The only thing the subject knows about an observer
+    is that it implements a certain interface (the Observer interface),
+    It does not need to know anything about the concrete class.
+  - New observers can be added at any time.
+  - We never need to modify the subject to add new observers.
+  - We can reuse subjects or observers independently of each other.
+  - Changes to either the subject, or an observer will 
+    not affect the other.
+- How many kinds of change can be identified here?
+
+Q: Based on our first implementation, which of the following applies?
+- [x] A. We are coding to create implementations, not interfaces.
+- [x] B. For every new display, we will need to alter the code.
+- [x] C. We have no way to add/remove display elements at runtime.
+- [ ] D. The display elements don't implement a common interface.
+- [x] E. We haven't encapsulated the part that changes.
+- [x] F. We are violating encapsulation of the WeatherData class.
