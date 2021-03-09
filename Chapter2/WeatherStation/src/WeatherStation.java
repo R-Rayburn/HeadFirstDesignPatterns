@@ -6,12 +6,21 @@ public class WeatherStation {
                 new CurrentConditionsDisplay(weatherData);
         StatisticsDisplay statisticsDisplay = new StatisticsDisplay(weatherData);
         ForecastDisplay forecastDisplay = new ForecastDisplay(weatherData);
+
+        // State updates
+        weatherData.setMeasurements(80, 65, 30.4f);
+
+        // New observer is introduced
         HeatIndexDisplay heatIndexDisplay = new HeatIndexDisplay(weatherData);
 
-        weatherData.setMeasurements(80, 65, 30.4f);
+        // State updates again
         weatherData.setMeasurements(82, 70, 29.2f);
-        weatherData.setMeasurements(78, 90, 29.2f);
+
+        // Heat Index and Forecast displays no longer care about state.
         weatherData.removeObserver(heatIndexDisplay);
-        weatherData.setMeasurements(62, 70, 31.3f);
+        weatherData.removeObserver(forecastDisplay);
+
+        // State updates yet again
+        weatherData.setMeasurements(78, 90, 29.2f);
     }
 }

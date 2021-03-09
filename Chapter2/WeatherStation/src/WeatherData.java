@@ -18,17 +18,19 @@ public class WeatherData implements Subject {
         observers.add(o);
     }
 
-    public void removeObserver(Observer o) {
-        observers.remove(o);
-    }
+    public void removeObserver(Observer o) { observers.remove(o); }
 
     public void notifyObservers() {
+        int increment = 1;
         for (Observer observer : observers) {
+            System.out.print(increment + ": ");
             observer.update();
+            increment ++;
         }
     }
 
     public void measurementsChanged() {
+        System.out.println("---- Values Updated ----");
         notifyObservers();
     }
 
