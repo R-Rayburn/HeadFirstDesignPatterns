@@ -1,6 +1,10 @@
 public class DarkRoast extends Beverage {
-    @Override
+
+    public DarkRoast() {
+        description = "Dark Roast";
+    }
+
     public double cost() {
-        return 0;
+        return .99;
     }
 }

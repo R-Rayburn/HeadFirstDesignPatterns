@@ -1,10 +1,10 @@
 public class HouseBlend extends Beverage {
+
     public HouseBlend() {
-        description = "Most Excellent Dark Roast";
+        description = "House Blend Coffee";
     }
 
-    @Override
     public double cost() {
-        return 0;
+        return .89;
     }
 }
