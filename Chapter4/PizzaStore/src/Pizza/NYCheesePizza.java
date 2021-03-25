@@ -1,4 +1,4 @@
 package Pizza;
 
-public class NYCheesePizza extends Pizza {
+public class NYCheesePizza extends CheesePizza {
 }
