@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/Chapter1/Character/Character.iml" filepath="$PROJECT_DIR$/Chapter1/Character/Character.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter1/Duck/Duck.iml" filepath="$PROJECT_DIR$/Chapter1/Duck/Duck.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/HeadFirstDesignPatterns.iml" filepath="$PROJECT_DIR$/.idea/HeadFirstDesignPatterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter4/PizzaStore/PizzaStore.iml" filepath="$PROJECT_DIR$/Chapter4/PizzaStore/PizzaStore.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter2/SwingObserver/SwingObserver.iml" filepath="$PROJECT_DIR$/Chapter2/SwingObserver/SwingObserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter2/WeatherStation/WeatherStation.iml" filepath="$PROJECT_DIR$/Chapter2/WeatherStation/WeatherStation.iml" />
     </modules>
