@@ -7,7 +7,7 @@ import Pizza.NYClamPizza;
 import Pizza.NYVeggiePizza;
 
 public class NYPizzaStore extends PizzaStore {
-    public Pizza createPizza(String type) {
+    protected Pizza createPizza(String type) {
         switch (type) {
             case "cheese": return new NYCheesePizza();
             case "pepperoni": return new NYPepperoniPizza();
