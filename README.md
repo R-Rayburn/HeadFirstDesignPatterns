@@ -124,3 +124,49 @@ Satisfies the Open-Close principle.
   is, unless the client is relying on the component’s concrete type.
 - Decorators can result in many small objects in our design, and overuse
   can be complex.
+---
+## Chapter 4
+
+### Factory Method Pattern
+Defines an interface for creating an object, but lets subclasses decide which class
+to instantiate. Factory Method lets a class defer instantiation to subclasses.
+
+### Other things we learned from this chapter:
+- In design patterns, the phrase “implement an interface” does NOT always mean
+  “write a class that implements an interface, by using the ‘implements’ (Java)
+  keyword in the class declaration.” In the general use of the phrase, a concrete 
+  class implementing a method from a supertype (which could be a abstract class
+  OR interface) is still considered to be “implementing the interface” of that 
+  supertype.
+- A <u>factory method</u> handles object creation and encapsulates it in a subclass.
+  This decouples the client code in the superclass from the object creation code in the subclass.
+- ```java
+  abstract Product factoryMethod(String type)
+  ```
+  - A factory method is abstract, so the subclasses are counted on to handle
+    object creation.
+  - A factory method returns a <u>Product</u> that is typically used within
+    methods defined in the superclass.
+  - A factory method isolates the <u>Client</u> (the code in the superclass,
+    like orderPizza()) from knowing what kind of concrete Product is actually
+    created.
+  - A factory method may be parameterized (or not) to select among several
+    variations of a product.
+- Factory Method Pattern has Creator classes and Product classes:
+  - Creator classes cover both abstract and concrete classes. The abstract creator
+    class defines an abstract factory methods that the concrete creator subclasses
+    implement to produce products. Often the creator contains code that depends on
+    an abstract product, which is produced by a subclass. The creator never really
+    knows which concrete product was produced.
+  - Product classes cover both abstract and concrete classes. An abstract factory
+    may reference an abstract product class, but the concrete factory will instantiate
+    a concrete product to the abstract property.
+- Products must implement the same interface so that the classes that use the products
+  can refer to the interface, not the concrete class.
+- Creator is a class that contains the implementations for all the methods to
+  manipulate products, except for the factory method.
+- The abstract factoryMethod() is what all Creator subclasses must implement.
+- ConcreteCreator implements the factoryMethod(), which is the method that produces
+  products.
+- ConcreteCreator is responsible for creating one or more concrete products. It is
+  the only class that has the knowledge of how to create these products.
