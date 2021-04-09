@@ -10,7 +10,7 @@ import Generic.Ingredient.Veggie.Veggie;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Pizza {
+public abstract class Pizza {
     public String name;
 
     public Dough dough;
@@ -19,9 +19,9 @@ public class Pizza {
     public Cheese cheese;
     public Pepperoni pepperoni;
     public Clams clam;
-    public List<String> toppings = new ArrayList<String>();
+//    public List<String> toppings = new ArrayList<String>();
 
-    abstract void prepare();
+    abstract public void prepare();
 
     public void bake() {
         System.out.println("Bake for 25 minutes at 350");

@@ -1,16 +1,20 @@
 package Chicago;
 
+import Generic.Ingredient.Cheese.MozzarellaCheese;
+import Generic.Ingredient.Dough.ThickCrustDough;
+import Generic.Ingredient.Sauce.PlumTomatoSauce;
 import Generic.Pizza;
 
 public class ChicagoCheesePizza extends Pizza {
 
     public ChicagoCheesePizza() {
         name = "Chicago Style Deep Dish Cheese Pizza";
-        dough = "Extra Thick Crust Dough";
-        sauce = "Plum Tomato Sauce";
-
-        toppings.add("Shredded Mozzarella Cheese");
+        dough = new ThickCrustDough();
+        sauce = new PlumTomatoSauce();
+        cheese = new MozzarellaCheese();
     }
+
+    public void prepare() { }
 
     public void cut() {
         System.out.println("Cutting the pizza into square slices.");
