@@ -131,6 +131,16 @@ Satisfies the Open-Close principle.
 Defines an interface for creating an object, but lets subclasses decide which class
 to instantiate. Factory Method lets a class defer instantiation to subclasses.
 
+### Principles to know
+- Depend upon abstractions. Do not depend upon concrete classes.
+  - Not necessarily "Program to an interface, not an implementation", but also suggests
+    high-level components shouldn't depend on low-level components; rather they both
+    depend on abstractions.
+  - Guidelines (to strive for, not strictly follow):
+    - No variable should hold a reference to a concrete class.
+    - No class should derive from a concrete class.
+    - No method should override an implemented method of its base classes.
+
 ### Other things we learned from this chapter:
 - In design patterns, the phrase “implement an interface” does NOT always mean
   “write a class that implements an interface, by using the ‘implements’ (Java)
