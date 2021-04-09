@@ -1,6 +1,8 @@
-package Pizza;
+package NY;
 
-public class NYCheesePizza extends CheesePizza {
+import Generic.Pizza;
+
+public class NYCheesePizza extends Pizza {
     public NYCheesePizza() {
         name = "NY Style Sauce and Cheese Pizza";
         dough = "Thin Crust Dough";

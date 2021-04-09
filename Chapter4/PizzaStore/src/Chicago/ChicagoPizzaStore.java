@@ -1,10 +1,7 @@
-package Stores;
+package Chicago;
 
-import Pizza.Pizza;
-import Pizza.ChicagoCheesePizza;
-import Pizza.ChicagoClamPizza;
-import Pizza.ChicagoPepperoniPizza;
-import Pizza.ChicagoVeggiePizza;
+import Generic.PizzaStore;
+import Generic.Pizza;
 
 public class ChicagoPizzaStore extends PizzaStore {
     protected Pizza createPizza(String type) {

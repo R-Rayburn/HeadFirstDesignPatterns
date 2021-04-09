@@ -1,6 +1,8 @@
-package Pizza;
+package Chicago;
 
-public class ChicagoCheesePizza extends CheesePizza {
+import Generic.Pizza;
+
+public class ChicagoCheesePizza extends Pizza {
 
     public ChicagoCheesePizza() {
         name = "Chicago Style Deep Dish Cheese Pizza";

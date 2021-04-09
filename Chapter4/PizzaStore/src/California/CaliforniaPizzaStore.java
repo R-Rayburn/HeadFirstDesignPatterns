@@ -1,10 +1,11 @@
-package Stores;
+package California;
 
-import Pizza.Pizza;
-import Pizza.CaliforniaCheesePizza;
-import Pizza.CaliforniaClamPizza;
-import Pizza.CaliforniaPepperoniPizza;
-import Pizza.CaliforniaVeggiePizza;
+import Generic.PizzaStore;
+import Generic.Pizza;
+import California.CaliforniaCheesePizza;
+import California.CaliforniaClamPizza;
+import California.CaliforniaPepperoniPizza;
+import California.CaliforniaVeggiePizza;
 
 public class CaliforniaPizzaStore extends PizzaStore {
     protected Pizza createPizza(String type) {

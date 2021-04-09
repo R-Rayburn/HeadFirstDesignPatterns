@@ -1,6 +1,4 @@
-package Stores;
-
-import Pizza.Pizza;
+package Generic;
 
 public abstract class PizzaStore {
     // * Note that the orderPizza() method in the superclass

@@ -1,10 +1,7 @@
-package Stores;
+package NY;
 
-import Pizza.Pizza;
-import Pizza.NYCheesePizza;
-import Pizza.NYPepperoniPizza;
-import Pizza.NYClamPizza;
-import Pizza.NYVeggiePizza;
+import Generic.PizzaStore;
+import Generic.Pizza;
 
 public class NYPizzaStore extends PizzaStore {
     protected Pizza createPizza(String type) {

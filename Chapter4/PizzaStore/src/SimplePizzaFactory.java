@@ -1,8 +1,4 @@
-import Pizza.Pizza;
-import Pizza.CheesePizza;
-import Pizza.ClamPizza;
-import Pizza.PepperoniPizza;
-import Pizza.VeggiePizza;
+import Generic.Pizza;
 
 public class SimplePizzaFactory {
     public Pizza createPizza(String type) {

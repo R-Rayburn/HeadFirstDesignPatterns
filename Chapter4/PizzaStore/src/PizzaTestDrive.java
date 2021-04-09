@@ -1,7 +1,7 @@
-import Pizza.Pizza;
-import Stores.ChicagoPizzaStore;
-import Stores.NYPizzaStore;
-import Stores.PizzaStore;
+import Generic.Pizza;
+import Chicago.ChicagoPizzaStore;
+import NY.NYPizzaStore;
+import Generic.PizzaStore;
 
 public class PizzaTestDrive {
     public static void main(String[] args) {

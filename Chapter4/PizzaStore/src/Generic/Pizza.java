@@ -1,13 +1,13 @@
-package Pizza;
+package Generic;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Pizza {
-    String name;
-    String dough;
-    String sauce;
-    List<String> toppings = new ArrayList<String>();
+    public String name;
+    public String dough;
+    public String sauce;
+    public List<String> toppings = new ArrayList<String>();
 
     public void prepare() {
         System.out.println("Preparing " + name);
