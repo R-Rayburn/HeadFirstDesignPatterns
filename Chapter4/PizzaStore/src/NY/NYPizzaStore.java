@@ -1,16 +1,33 @@
 package NY;
 
-import Generic.PizzaStore;
-import Generic.Pizza;
+import Generic.*;
 
 public class NYPizzaStore extends PizzaStore {
-    protected Pizza createPizza(String type) {
-        switch (type) {
-            case "cheese": return new NYCheesePizza();
-            case "pepperoni": return new NYPepperoniPizza();
-            case "clam": return new NYClamPizza();
-            case "veggie": return new NYVeggiePizza();
-            default: return null;
+
+    protected Pizza createPizza(String item) {
+        Pizza pizza = null;
+        PizzaIngredientFactory ingredientFactory = new NYPizzaIngredientFactory();
+
+        String baseName = "New York Style";
+        switch (item) {
+            case "cheese":
+                pizza = new CheesePizza(ingredientFactory);
+                pizza.setName(baseName + " Cheese Pizza");
+                break;
+            case "pepperoni":
+                pizza = new PepperoniPizza(ingredientFactory);
+                pizza.setName(baseName + " Pepperoni Pizza");
+                break;
+            case "clam":
+                pizza = new ClamPizza(ingredientFactory);
+                pizza.setName(baseName + " Pepperoni Pizza");
+                break;
+            case "veggie":
+                pizza = new VeggiePizza(ingredientFactory);
+                pizza.setName(baseName + " Pepperoni Pizza");
+                break;
         }
+
+        return pizza;
     }
 }
