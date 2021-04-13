@@ -155,7 +155,7 @@ without specifying their concrete classes.
 - A <u>factory method</u> handles object creation and encapsulates it in a subclass.
   This decouples the client code in the superclass from the object creation code in the subclass.
 - ```java
-  abstract Product factoryMethod(String type)
+  abstract Product factoryMethod(String type);
   ```
   - A factory method is abstract, so the subclasses are counted on to handle
     object creation.
@@ -187,3 +187,21 @@ without specifying their concrete classes.
 - Often, methods in an Abstract Factory are implemented as factory methods.
 - Factory Method creates objects through interfaces, while Abstract Factory does it
   through object composition
+  
+### Bullet Points
+- All factories encapsulate object creation.
+- Simple factory, while not a bona fide design pattern, is a simple way to decouple
+  clients from concrete classes.
+- Factory Method relies on inheritance: object creation is delegated to subclasses,
+  which implement the factory method to create objects.
+- Abstract Factory relies on object composition: object creation is implemented in
+  methods exposed in the factory interface.
+_ All factory patterns promote loose coupling by reducing the dependency of your
+  application on concrete classes.
+- The intent of Factory Method is to allow a class to defer instantiation to its
+  subclasses.
+_ The intent of Abstract Factory is to create families of related objects without
+  having to depend on their concrete classes.
+- The Dependency Inversion Principle guides us to avoid dependencies on concrete
+  types and to strive for abstractions.
+- Factories are a powerful technique for coding to abstractions, not concrete classes.
