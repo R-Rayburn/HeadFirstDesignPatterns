@@ -131,6 +131,10 @@ Satisfies the Open-Close principle.
 Defines an interface for creating an object, but lets subclasses decide which class
 to instantiate. Factory Method lets a class defer instantiation to subclasses.
 
+### Abstract Factory Pattern
+Provides an interface for creating families of related or dependent objects
+without specifying their concrete classes.
+
 ### Principles to know
 - Depend upon abstractions. Do not depend upon concrete classes.
   - Not necessarily "Program to an interface, not an implementation", but also suggests
@@ -180,3 +184,6 @@ to instantiate. Factory Method lets a class defer instantiation to subclasses.
   products.
 - ConcreteCreator is responsible for creating one or more concrete products. It is
   the only class that has the knowledge of how to create these products.
+- Often, methods in an Abstract Factory are implemented as factory methods.
+- Factory Method creates objects through interfaces, while Abstract Factory does it
+  through object composition
