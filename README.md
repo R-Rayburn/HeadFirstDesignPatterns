@@ -104,15 +104,16 @@ Satisfies the Open-Close principle.
 - Classes should be **open** for extension but **closed** for modification.
 
 ### Other things we learned from this chapter:
-- Inheritance is one form of extension, but not necessarily the best way to
-  achieve flexibility in our designs.
-- In our designs we should allow behavior to be extended without the need to
-  modify existing code.
-- Composition and delegation can often be used to add new behaviors at runtime.
-- The Decorator Pattern provides an alternative to subclassing for extending
-  behavior.
-- The Decorator Pattern involves a set of decorator classes that are used to
-  wrap concrete components.
+- Inheritance is one form of extension, but not necessarily the best way
+  to achieve flexibility in our designs.
+- In our designs we should allow behavior to be extended without the need
+  to modify existing code.
+- Composition and delegation can often be used to add new behaviors at
+  runtime.
+- The Decorator Pattern provides an alternative to subclassing for
+  extending behavior.
+- The Decorator Pattern involves a set of decorator classes that are used
+  to wrap concrete components.
 - Decorator classes mirror the type of the components they decorate. 
   (In fact, they are the same type as the components they decorate, either
   through inheritance or interface implementation.)
@@ -120,88 +121,134 @@ Satisfies the Open-Close principle.
   functionality before and/or after (or even in place of) method calls
   to the component.
 - You can wrap a component with any number of decorators.
-- Decorators are typically transparent to the client of the component — that
-  is, unless the client is relying on the component’s concrete type.
+- Decorators are typically transparent to the client of the 
+  component — that is, unless the client is relying on the component’s
+  concrete type.
 - Decorators can result in many small objects in our design, and overuse
   can be complex.
 ---
 ## Chapter 4
 
 ### Factory Method Pattern
-Defines an interface for creating an object, but lets subclasses decide which class
-to instantiate. Factory Method lets a class defer instantiation to subclasses.
+Defines an interface for creating an object, but lets subclasses decide
+which class to instantiate. Factory Method lets a class defer
+instantiation to subclasses.
 
 ### Abstract Factory Pattern
-Provides an interface for creating families of related or dependent objects
-without specifying their concrete classes.
+Provides an interface for creating families of related or dependent
+objects without specifying their concrete classes.
 
 ### Principles to know
 - Depend upon abstractions. Do not depend upon concrete classes.
-  - Not necessarily "Program to an interface, not an implementation", but also suggests
-    high-level components shouldn't depend on low-level components; rather they both
-    depend on abstractions.
+  - Not necessarily "Program to an interface, not an implementation",
+    but also suggests high-level components shouldn't depend on
+    low-level components; rather they both depend on abstractions.
   - Guidelines (to strive for, not strictly follow):
     - No variable should hold a reference to a concrete class.
     - No class should derive from a concrete class.
     - No method should override an implemented method of its base classes.
 
 ### Other things we learned from this chapter:
-- In design patterns, the phrase “implement an interface” does NOT always mean
-  “write a class that implements an interface, by using the ‘implements’ (Java)
-  keyword in the class declaration.” In the general use of the phrase, a concrete 
-  class implementing a method from a supertype (which could be a abstract class
-  OR interface) is still considered to be “implementing the interface” of that 
-  supertype.
-- A <u>factory method</u> handles object creation and encapsulates it in a subclass.
-  This decouples the client code in the superclass from the object creation code in the subclass.
+- In design patterns, the phrase “implement an interface” does NOT
+  always mean “write a class that implements an interface, by using the
+  ‘implements’ (Java) keyword in the class declaration.” In the general
+  use of the phrase, a concrete class implementing a method from a
+  supertype (which could be a abstract class OR interface) is still
+  considered to be “implementing the interface” of that supertype.
+- A <u>factory method</u> handles object creation and encapsulates it
+  in a subclass. This decouples the client code in the superclass
+  from the object creation code in the subclass.
 - ```java
   abstract Product factoryMethod(String type);
   ```
-  - A factory method is abstract, so the subclasses are counted on to handle
-    object creation.
-  - A factory method returns a <u>Product</u> that is typically used within
-    methods defined in the superclass.
-  - A factory method isolates the <u>Client</u> (the code in the superclass,
-    like orderPizza()) from knowing what kind of concrete Product is actually
-    created.
-  - A factory method may be parameterized (or not) to select among several
-    variations of a product.
+  - A factory method is abstract, so the subclasses are counted on to
+    handle object creation.
+  - A factory method returns a <u>Product</u> that is typically used 
+    within methods defined in the superclass.
+  - A factory method isolates the <u>Client</u> (the code in the
+    superclass, like orderPizza()) from knowing what kind of concrete
+    Product is actually created.
+  - A factory method may be parameterized (or not) to select among
+    several variations of a product.
 - Factory Method Pattern has Creator classes and Product classes:
-  - Creator classes cover both abstract and concrete classes. The abstract creator
-    class defines an abstract factory methods that the concrete creator subclasses
-    implement to produce products. Often the creator contains code that depends on
-    an abstract product, which is produced by a subclass. The creator never really
-    knows which concrete product was produced.
-  - Product classes cover both abstract and concrete classes. An abstract factory
-    may reference an abstract product class, but the concrete factory will instantiate
-    a concrete product to the abstract property.
-- Products must implement the same interface so that the classes that use the products
-  can refer to the interface, not the concrete class.
-- Creator is a class that contains the implementations for all the methods to
-  manipulate products, except for the factory method.
-- The abstract factoryMethod() is what all Creator subclasses must implement.
-- ConcreteCreator implements the factoryMethod(), which is the method that produces
-  products.
-- ConcreteCreator is responsible for creating one or more concrete products. It is
-  the only class that has the knowledge of how to create these products.
-- Often, methods in an Abstract Factory are implemented as factory methods.
-- Factory Method creates objects through interfaces, while Abstract Factory does it
-  through object composition
+  - Creator classes cover both abstract and concrete classes. The 
+    abstract creator class defines an abstract factory methods that 
+    the concrete creator subclasses implement to produce products. 
+    Often the creator contains code that depends on an abstract product,
+    which is produced by a subclass. The creator never really knows
+    which concrete product was produced.
+  - Product classes cover both abstract and concrete classes. An
+    abstract factory may reference an abstract product class, but the 
+    concrete factory will instantiate a concrete product to the 
+    abstract property.
+- Products must implement the same interface so that the classes that 
+  use the products can refer to the interface, not the concrete class.
+- Creator is a class that contains the implementations for all the 
+  methods to manipulate products, except for the factory method.
+- The abstract factoryMethod() is what all Creator subclasses must 
+  implement.
+- ConcreteCreator implements the factoryMethod(), which is the method 
+  that produces products.
+- ConcreteCreator is responsible for creating one or more concrete 
+  products. It is the only class that has the knowledge of how to
+  create these products.
+- Often, methods in an Abstract Factory are implemented as factory 
+  methods.
+- Factory Method creates objects through interfaces, while Abstract
+  Factory does it through object composition
   
 ### Bullet Points
 - All factories encapsulate object creation.
-- Simple factory, while not a bona fide design pattern, is a simple way to decouple
-  clients from concrete classes.
-- Factory Method relies on inheritance: object creation is delegated to subclasses,
-  which implement the factory method to create objects.
-- Abstract Factory relies on object composition: object creation is implemented in
-  methods exposed in the factory interface.
-_ All factory patterns promote loose coupling by reducing the dependency of your
-  application on concrete classes.
-- The intent of Factory Method is to allow a class to defer instantiation to its
-  subclasses.
-_ The intent of Abstract Factory is to create families of related objects without
-  having to depend on their concrete classes.
-- The Dependency Inversion Principle guides us to avoid dependencies on concrete
-  types and to strive for abstractions.
-- Factories are a powerful technique for coding to abstractions, not concrete classes.
+- Simple factory, while not a bona fide design pattern, is a simple way
+  to decouple clients from concrete classes.
+- Factory Method relies on inheritance: object creation is delegated to 
+  subclasses, which implement the factory method to create objects.
+- Abstract Factory relies on object composition: object creation is 
+  implemented in methods exposed in the factory interface.
+_ All factory patterns promote loose coupling by reducing the dependency
+  of your application on concrete classes.
+- The intent of Factory Method is to allow a class to defer instantiation
+  to its subclasses.
+_ The intent of Abstract Factory is to create families of related objects
+  without having to depend on their concrete classes.
+- The Dependency Inversion Principle guides us to avoid dependencies on
+  concrete types and to strive for abstractions.
+- Factories are a powerful technique for coding to abstractions, not 
+  concrete classes.
+---
+## Chapter 5
+
+### Singleton Pattern
+Ensures a class has only one instance and provides a global point of
+access to it.
+
+### Other things we learned form this chapter:
+- There are different options for a Singleton to handle multithreading:
+  1. Do nothing if the performance of the `getInstance()` method isn't 
+     critical to the application.
+  2. Move to an eagerly created instance rather than a lazily created
+     one.
+     - Useful when the application always creates an instance of the
+       Singleton, or the overhead of creation and runtime aspects of 
+       the Singleton isn't onerous.
+  3. Use "double-checked locking" to reduce the use of synchronization 
+     in `getInstance()`.
+     - If performance is an issue, this implementation can drastically
+       reduce overhead.
+  
+### Bullet Point
+- The Singleton Pattern ensures you have at most one instance of a 
+  class in your application.
+- The Singleton Pattern also provides a global access point to that 
+  instance.
+- Java's implementation of the Singleton Pattern makes use of a private
+  constructor, a static method combined with a static variable.
+- Examine your performance and resource constraints and carefully choose
+  an appropriate Singleton implementation for multithreaded applications
+  (and all applications should be considered multithreaded).
+- Beware of the double-checked locking implementation; it is not thread 
+  safe in versions prior to Java 5.
+- Be careful if using multiple class loaders; this could defeat the 
+  singleton implementation and result in multiple instances.
+- Java's enums can be used to simplify a Singleton implementation.
+---
