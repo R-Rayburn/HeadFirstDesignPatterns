@@ -1,4 +1,4 @@
 package HomeTheater;
 
-public class Screen {
+public class Tuner {
 }
