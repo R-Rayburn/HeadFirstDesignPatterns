@@ -292,3 +292,11 @@ operations.
 - Order            --> Command
 - Customer         --> Client
 - takeOrder()      --> setCommand()
+
+---
+## Chapter 7
+
+### Adapter Pattern
+Converts the interface of a class into another interface the clients expect.
+Adapter lets classes work together that couldn't otherwise because of compatible
+interfaces.
