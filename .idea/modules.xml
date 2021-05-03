@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Chapter3/Beverage/Beverage.iml" filepath="$PROJECT_DIR$/Chapter3/Beverage/Beverage.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter1/Character/Character.iml" filepath="$PROJECT_DIR$/Chapter1/Character/Character.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter6/Command/Command.iml" filepath="$PROJECT_DIR$/Chapter6/Command/Command.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter1/Duck/Duck.iml" filepath="$PROJECT_DIR$/Chapter1/Duck/Duck.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/HeadFirstDesignPatterns.iml" filepath="$PROJECT_DIR$/.idea/HeadFirstDesignPatterns.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter4/PizzaStore/PizzaStore.iml" filepath="$PROJECT_DIR$/Chapter4/PizzaStore/PizzaStore.iml" />
