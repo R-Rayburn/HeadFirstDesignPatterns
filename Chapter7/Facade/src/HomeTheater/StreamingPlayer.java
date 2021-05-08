@@ -20,7 +20,7 @@ public class StreamingPlayer {
     public void play(String movie) {
         this.movie = movie;
         currentChapter = 0;
-        System.out.println(description = " playing\"" + movie + "\"");
+        System.out.println(description + " playing \"" + this.movie + "\"");
     }
 
     public void play(int chapter) {
