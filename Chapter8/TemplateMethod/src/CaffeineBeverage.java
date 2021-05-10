@@ -1,5 +1,15 @@
 public abstract class CaffeineBeverage {
-    abstract public void prepareRecipe();
+
+    final void prepareRecipe() {
+        boilWater();
+        brew();
+        pourInCup();
+        addCondiments();
+    }
+
+    abstract void brew();
+
+    abstract void addCondiments();
 
     public void boilWater() {
         System.out.println("Boiling water");
