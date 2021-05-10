@@ -4,18 +4,20 @@ public abstract class CaffeineBeverage {
         boilWater();
         brew();
         pourInCup();
-        addCondiments();
+        if (customerWantsCondiments())
+            addCondiments();
     }
 
+    // Primitive operations
     abstract void brew();
-
     abstract void addCondiments();
 
-    public void boilWater() {
-        System.out.println("Boiling water");
-    }
+    // Concrete operations
+    public void boilWater() { System.out.println("Boiling water"); }
+    public void pourInCup() { System.out.println("Pouring into cup"); }
 
-    public void pourInCup() {
-        System.out.println("Pouring into cup");
+    // Hook
+    public boolean customerWantsCondiments() {
+        return true;
     }
 }
