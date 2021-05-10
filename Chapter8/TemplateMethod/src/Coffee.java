@@ -1,6 +1,6 @@
-public class Coffee {
+public class Coffee extends CaffeineBeverage {
 
-    void prepareRecipe() {
+    public void prepareRecipe() {
         boilWater();
         brewCoffeeGrinds();
         pourInCup();
@@ -11,15 +11,7 @@ public class Coffee {
         System.out.println("Adding sugar and milk");
     }
 
-    private void pourInCup() {
-        System.out.println("Pouring into cup");
-    }
-
     private void brewCoffeeGrinds() {
         System.out.println("Dripping coffee through filter");
-    }
-
-    private void boilWater() {
-        System.out.println("Boiling Water");
     }
 }
