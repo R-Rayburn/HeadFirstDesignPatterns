@@ -18,11 +18,8 @@ public class Coffee extends CaffeineBeverage {
         System.out.println("Would you like Milk and Sugar with your coffee (y/n)? ");
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
-        try {
-            answer = in.readLine();
-        } catch (IOException ioe) {
-            System.err.println("IO error with trying to read answer");
-        }
+        try { answer = in.readLine(); }
+        catch (IOException ioe) { System.err.println("IO error with trying to read answer"); }
 
         if (answer == null) return "no";
         return answer;
