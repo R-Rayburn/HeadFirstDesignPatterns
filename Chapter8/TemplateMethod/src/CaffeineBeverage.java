@@ -18,6 +18,6 @@ public abstract class CaffeineBeverage {
 
     // Hook
     public boolean customerWantsCondiments() {
-        return true;
+        return false;
     }
 }
