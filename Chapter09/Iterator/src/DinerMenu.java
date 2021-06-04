@@ -34,5 +34,7 @@ public class DinerMenu {
         else menuItems[numberOfItems++] = menuItem;
     }
 
-    public MenuItem[] getMenuItems() { return menuItems; }
+    public Iterator createIterator() {
+        return new DinerMenuIterator(menuItems);
+    }
 }
