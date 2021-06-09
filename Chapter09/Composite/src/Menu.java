@@ -21,8 +21,8 @@ public class Menu extends MenuComponent {
     public String getDescription() { return description; }
 
     public void print() {
-        System.out.println("\n" + getName());
-        System.out.println(getDescription());
+        System.out.print("\n" + getName());
+        System.out.println(", " + getDescription());
         System.out.println("--------------------");
 
         for (MenuComponent menuComponent : menuComponents) {
