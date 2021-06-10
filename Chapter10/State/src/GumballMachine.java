@@ -63,4 +63,18 @@ public class GumballMachine {
         this.count = count;
         if (count > 0) state = NO_QUARTER;
     }
+
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        builder.append("\n\"Gumballs-2-Go\"\n")
+                .append("Java-enabled standing Model #2021-1\n")
+                .append("Inventory: ").append(count).append("\n");
+
+        if (state == SOLD_OUT) builder.append("Machine is sold out\n");
+        else if (state == NO_QUARTER) builder.append("Machine is waiting for your quarter\n");
+        else if (state == HAS_QUARTER) builder.append("Machine is waiting to be cranked\n");
+        else if (state == SOLD) builder.append("Machine is giving you your gumball\n");
+        else builder.append("UNKNOWN_STATE\n");
+        return builder.toString();
+    }
 }
