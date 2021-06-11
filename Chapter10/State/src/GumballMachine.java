@@ -44,6 +44,6 @@ public class GumballMachine {
         return "\n\"Gumballs-2-Go\"\n" +
                 "Java-enabled standing Model #2021-3\n" +
                 "Inventory: " + getCount() + "\n" +
-                state;
+                state + "\n";
     }
 }
