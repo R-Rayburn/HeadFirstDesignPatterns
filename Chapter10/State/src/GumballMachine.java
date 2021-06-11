@@ -7,7 +7,7 @@ public class GumballMachine {
     State winnerState;
 
     State state;
-    int count = 0;
+    int count;
 
     public GumballMachine(int numberOfGumballs) {
         soldOutState = new SoldOutState(this);
@@ -39,4 +39,11 @@ public class GumballMachine {
     public State getHasQuarterState() { return hasQuarterState; }
     public State getNoQuarterState() { return noQuarterState; }
     public State getWinnerState() { return winnerState; }
+
+    public String toString() {
+        return "\n\"Gumballs-2-Go\"\n" +
+                "Java-enabled standing Model #2021-3\n" +
+                "Inventory: " + getCount() + "\n" +
+                state;
+    }
 }

@@ -21,4 +21,8 @@ public class NoQuarterState implements State {
     public void dispense() {
         System.out.println("You need to pay in order to get a gumball");
     }
+
+    public String toString() {
+        return "Machine is waiting for your quarter";
+    }
 }
