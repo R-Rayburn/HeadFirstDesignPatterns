@@ -30,6 +30,8 @@ public class HasQuarterState implements State {
         System.out.println("No gumball dispensed");
     }
 
+    public void refill() {}
+
     public String toString() {
         return "Machine is waiting to be cranked";
     }

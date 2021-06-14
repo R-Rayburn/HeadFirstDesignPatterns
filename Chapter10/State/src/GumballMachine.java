@@ -25,6 +25,9 @@ public class GumballMachine {
     public void ejectQuarter() { state.ejectQuarter(); }
     public void turnCrank() {
         state.turnCrank();
+        // TODO: This always runs, even if there is no quarter.
+        //   Need to implement some sort of exception to
+        //    verify a valid state to dispense.
         state.dispense();
     }
     public void setState(State state) { this.state = state; }
@@ -39,6 +42,12 @@ public class GumballMachine {
     public State getHasQuarterState() { return hasQuarterState; }
     public State getNoQuarterState() { return noQuarterState; }
     public State getWinnerState() { return winnerState; }
+
+    public void refill(int count) {
+        this.count += count;
+        System.out.println("The gumball machine was just refilled; its new count is " + getCount());
+        state.refill();
+    }
 
     public String toString() {
         return "\n\"Gumballs-2-Go\"\n" +

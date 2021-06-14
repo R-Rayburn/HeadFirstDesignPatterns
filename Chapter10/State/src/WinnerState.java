@@ -33,6 +33,8 @@ public class WinnerState implements State {
         }
     }
 
+    public void refill() {}
+
     public String toString() {
         return "You are a winner of a free gumball!";
     }

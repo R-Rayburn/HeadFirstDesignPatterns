@@ -27,6 +27,8 @@ public class SoldState implements State {
         }
     }
 
+    public void refill() {}
+
     public String toString() {
         return "Machine is giving you your gumball";
     }
