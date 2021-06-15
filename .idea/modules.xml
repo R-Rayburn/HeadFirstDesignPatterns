@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/Chapter09/Iterator/Iterator.iml" filepath="$PROJECT_DIR$/Chapter09/Iterator/Iterator.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter04/PizzaStore/PizzaStore.iml" filepath="$PROJECT_DIR$/Chapter04/PizzaStore/PizzaStore.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter05/Singleton/Singleton.iml" filepath="$PROJECT_DIR$/Chapter05/Singleton/Singleton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter10/State/State.iml" filepath="$PROJECT_DIR$/Chapter10/State/State.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter02/SwingObserver/SwingObserver.iml" filepath="$PROJECT_DIR$/Chapter02/SwingObserver/SwingObserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter08/TemplateMethod/TemplateMethod.iml" filepath="$PROJECT_DIR$/Chapter08/TemplateMethod/TemplateMethod.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter02/WeatherStation/WeatherStation.iml" filepath="$PROJECT_DIR$/Chapter02/WeatherStation/WeatherStation.iml" />
