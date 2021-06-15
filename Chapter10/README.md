@@ -17,9 +17,12 @@ to change its class.
 - The State and Strategy Patterns have the same class 
   diagram, but they differ in intent.
 - The Strategy Pattern typically configures Context 
-  classes with a behavior or algorithm.
+  classes with a behavior or algorithm. It is like an
+  flexible alternative to subclassing.
 - The State Pattern allows a Context to change its behavior
-  as the state of the Context changes.
+  as the state of the Context changes. It is like an
+  alternative to putting a lot of conditionals in your
+  context.
 - State transitions can be controlled by the State 
   classes or by the Context classes.
 - Using the State Pattern will typically result in a
