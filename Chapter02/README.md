@@ -9,6 +9,8 @@ _Supposedly the most commonly used pattern._\
 _Real World Example: Subscription with a publisher
 (subject) and subscribers (observers)_
 
+![](./observer.jpg)
+
 ### Principles to know
 - Strive for loosely coupled designs between objects
   that interact.
