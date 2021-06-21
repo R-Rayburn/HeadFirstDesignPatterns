@@ -5,7 +5,7 @@ The Strategy Pattern defines a family of algorithms, encapsulates each one,
 and makes them interchangeable.
 Strategy lets the algorithm vary independently of clients that use it.
 
-[strategy_uml](./strategy.jpg)
+![strategy_uml](./strategy.jpg)
 
 ### Principles to know
 - Encapsulate what varies
