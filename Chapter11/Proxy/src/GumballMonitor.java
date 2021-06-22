@@ -1,13 +1,17 @@
 public class GumballMonitor {
-    GumballMachine machine;
+    GumballMachineRemote machine;
 
-    public GumballMonitor(GumballMachine machine) {
+    public GumballMonitor(GumballMachineRemote machine) {
         this.machine = machine;
     }
 
     public void report() {
-        System.out.println("Gumball Machine: " + machine.getLocation());
-        System.out.println("Current inventory: " + machine.getCount() + " gumballs");
-        System.out.println("Current state: " + machine.getState());
+        try {
+            System.out.println("Gumball Machine: " + machine.getLocation());
+            System.out.println("Current inventory: " + machine.getCount() + " gumballs");
+            System.out.println("Current state: " + machine.getState());
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }
 }

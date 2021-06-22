@@ -1,4 +1,9 @@
-public class GumballMachine {
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
+
+public class GumballMachine extends UnicastRemoteObject implements GumballMachineRemote {
+
+    private static final long serialVersionUID = 2L;
 
     State soldOutState;
     State soldState;
@@ -10,7 +15,7 @@ public class GumballMachine {
     int count;
     String location;
 
-    public GumballMachine(String location, int numberOfGumballs) {
+    public GumballMachine(String location, int numberOfGumballs) throws RemoteException {
         soldOutState = new SoldOutState(this);
         soldState = new SoldState(this);
         hasQuarterState = new HasQuarterState(this);
@@ -50,8 +55,8 @@ public class GumballMachine {
         state.refill();
     }
 
-    public String getState() {
-        return state.toString();
+    public State getState() {
+        return state;
     }
 
     public String toString() {
