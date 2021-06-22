@@ -4,6 +4,8 @@
 Ensures a class has only one instance and provides a global point of
 access to it.
 
+![](./singleton.jpg)
+
 ### Other things we learned form this chapter:
 - There are different options for a Singleton to handle multithreading:
     1. Do nothing if the performance of the `getInstance()` method isn't

@@ -5,6 +5,8 @@ Encapsulates a request as an object, thereby letting you parameterize other
 objects with different requests, queue or log requests and support undoable
 operations.
 
+![](./command.jpg)
+
 ### Other things we learned from this chapter:
 - NUll Object Pattern:
     - While not a true pattern, this is something that is used alongside other

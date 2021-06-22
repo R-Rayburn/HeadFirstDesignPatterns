@@ -5,9 +5,13 @@ Defines an interface for creating an object, but lets subclasses decide
 which class to instantiate. Factory Method lets a class defer
 instantiation to subclasses.
 
+![](./factory_method.jpg)
+
 ### Abstract Factory Pattern
 Provides an interface for creating families of related or dependent
 objects without specifying their concrete classes.
+
+![](./abstract_factory.jpg)
 
 ### Principles to know
 - Depend upon abstractions. Do not depend upon concrete classes.
