@@ -6,6 +6,8 @@ deferring some steps to subclasses. Lets subclasses
 redefine certain steps of an algorithm without changing
 the algorithm's structure.
 
+![](./template_method.jpg)
+
 ### Principles to know
 - Don't call us, we'll call you.
     - Also called the Hollywood Principle.

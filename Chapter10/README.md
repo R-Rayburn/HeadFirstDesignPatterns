@@ -5,6 +5,8 @@ Allows an object to alter its behavior when its
 internal state changes. The object will appear
 to change its class.
 
+![](./state.jpg)
+
 ### Bullet Points
 - The State Pattern allows an object to have many
   behaviors that are based on its internal state.

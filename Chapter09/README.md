@@ -4,10 +4,14 @@
 Provide a way to access the elements of an aggregate object
 sequentially without exposing its underlying representation.
 
+![](./iterator.jpg)
+
 ### Composite Pattern
 Compose objects into tree structures to represent part-whole
 hierarchies. Composite lets clients treat individual objects
 and compositions of objects uniformly.
+
+![](./composite.jpg)
 
 ### Principles to know
 - A class should only have one reason to change
