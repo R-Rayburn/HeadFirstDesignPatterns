@@ -3,6 +3,6 @@
 ### Proxy Pattern
 
 
-![](./proxy.jpg)
+![](remote_proxy.jpg)
 
 ### Bullet Points
