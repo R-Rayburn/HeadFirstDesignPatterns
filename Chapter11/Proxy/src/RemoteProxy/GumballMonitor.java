@@ -1,3 +1,5 @@
+package RemoteProxy;
+
 public class GumballMonitor {
     GumballMachineRemote machine;
 

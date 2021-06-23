@@ -1,10 +1,12 @@
+package RemoteProxy;
+
 import java.rmi.Naming;
 
 public class GumballMachineTestDrive {
     public static void main(String[] args) {
 
         if (args.length < 2) {
-            System.out.println("GumballMachine <name> <inventory>");
+            System.out.println("RemoteProxy.GumballMachine <name> <inventory>");
             System.exit(1);
         }
 

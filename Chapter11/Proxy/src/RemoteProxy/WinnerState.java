@@ -1,3 +1,5 @@
+package RemoteProxy;
+
 public class WinnerState implements State {
     private static final long serialVersionUID = 2L;
     transient GumballMachine gumballMachine;

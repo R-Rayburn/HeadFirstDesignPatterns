@@ -1,3 +1,5 @@
+package RemoteProxy;
+
 import java.rmi.Naming;
 
 public class GumballMonitorTestDrive {
