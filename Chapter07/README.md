@@ -5,9 +5,14 @@ Converts the interface of a class into another interface the clients expect.
 Adapter lets classes work together that couldn't otherwise because of compatible
 interfaces.
 
+![Object Adapter](./obj_adapter.jpg)
+![Class Adapter](./class_adapter.jpg)
+
 ### Facade Pattern
 Provides a unified interface to a set of interfaces in a subsystem. Facade defines
 a higher-level interface that makes the subsystem easier to use.
+
+![](./facade.jpg)
 
 ### Principles to know
 - Talk only to your immediate friends.

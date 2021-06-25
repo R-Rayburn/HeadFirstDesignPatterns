@@ -5,6 +5,8 @@ Attach additional responsibilities to an object dynamically.
 Provides a flexible alternative to subclassing for extended functionality.
 Satisfies the Open-Close principle.
 
+![](./decorator.jpg)
+
 ### Principles to know
 - Classes should be **open** for extension but **closed** for modification.
 
