@@ -1,5 +1,6 @@
 import Adapters.GooseAdapter;
 import Base.*;
+import Composite.Flock;
 import Decorators.QuackCounter;
 import Factories.AbstractDuckFactory;
 import Factories.CountingDuckFactory;
@@ -12,21 +13,41 @@ public class DuckSimulator {
     }
 
     void simulate(AbstractDuckFactory duckFactory) {
-        Quackable mallardDuck = duckFactory.createMallardDuck();
         Quackable redheadDuck = duckFactory.createRedheadDuck();
         Quackable duckCall = duckFactory.createDuckCall();
         Quackable rubberDuck = duckFactory.createRubberDuck();
         Quackable gooseDuck = new GooseAdapter(new Goose());
 
-        System.out.println("\nDuck Simulator");
+        System.out.println("\nDuck Simulator: With Composite - Flocks");
 
-        simulate(mallardDuck);
-        simulate(redheadDuck);
-        simulate(duckCall);
-        simulate(rubberDuck);
-        simulate(gooseDuck);
+        Flock flockOfDucks = new Flock();
 
-        System.out.println("The ducks quacked " + QuackCounter.getQuacks() + " times");
+        flockOfDucks.add(redheadDuck);
+        flockOfDucks.add(duckCall);
+        flockOfDucks.add(rubberDuck);
+        flockOfDucks.add(gooseDuck);
+
+        Flock flockOfMallards = new Flock();
+
+        Quackable mallardDuckOne = duckFactory.createMallardDuck();
+        Quackable mallardDuckTwo = duckFactory.createMallardDuck();
+        Quackable mallardDuckThree = duckFactory.createMallardDuck();
+        Quackable mallardDuckFour = duckFactory.createMallardDuck();
+
+        flockOfMallards.add(mallardDuckOne);
+        flockOfMallards.add(mallardDuckTwo);
+        flockOfMallards.add(mallardDuckThree);
+        flockOfMallards.add(mallardDuckFour);
+
+        flockOfDucks.add(flockOfMallards);
+
+        System.out.println("\nDuck Simulator: Whole Flock Simulation");
+        simulate(flockOfDucks);
+
+        System.out.println("\nDuck Simulator: Mallard Flock Simulation");
+        simulate(flockOfMallards);
+
+        System.out.println("\nThe ducks quacked " + QuackCounter.getQuacks() + " times");
     }
 
     void simulate(Quackable duck) {
