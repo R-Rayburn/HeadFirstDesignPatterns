@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/Chapter01/Character/Character.iml" filepath="$PROJECT_DIR$/Chapter01/Character/Character.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter06/Command/Command.iml" filepath="$PROJECT_DIR$/Chapter06/Command/Command.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter09/Composite/Composite.iml" filepath="$PROJECT_DIR$/Chapter09/Composite/Composite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter12/Compound/Compound.iml" filepath="$PROJECT_DIR$/Chapter12/Compound/Compound.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter01/Duck/Duck.iml" filepath="$PROJECT_DIR$/Chapter01/Duck/Duck.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter07/Facade/Chapter7/Facade.iml" filepath="$PROJECT_DIR$/Chapter07/Facade/Chapter7/Facade.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/HeadFirstDesignPatterns.iml" filepath="$PROJECT_DIR$/.idea/HeadFirstDesignPatterns.iml" />
