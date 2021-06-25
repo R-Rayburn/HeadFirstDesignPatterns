@@ -1,3 +1,8 @@
+package Adapters;
+
+import Base.Goose;
+import Base.Quackable;
+
 public class GooseAdapter implements Quackable {
     Goose goose;
 

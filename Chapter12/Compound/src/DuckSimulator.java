@@ -1,3 +1,7 @@
+import Adapters.GooseAdapter;
+import Base.*;
+import Decorators.QuackCounter;
+
 public class DuckSimulator {
     public static void main(String[] args) {
         DuckSimulator simulator = new DuckSimulator();

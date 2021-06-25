@@ -1,3 +1,7 @@
+package Decorators;
+
+import Base.Quackable;
+
 public class QuackCounter implements Quackable {
     Quackable duck;
     static int numberOfQuacks;
