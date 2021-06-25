@@ -10,3 +10,5 @@ ___
 ---
 
 UMLs created using [YUML by Pocketworks Mobile Ltd](https://yuml.me/diagram/scruffy/class/draw)
+
+[Their code](https://www.wickedlysmart.com/head-first-design-patterns/)
