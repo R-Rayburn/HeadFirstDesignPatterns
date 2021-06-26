@@ -1,5 +1,7 @@
 package Base;
 
-public interface Quackable {
+import Observer.QuackObservable;
+
+public interface Quackable extends QuackObservable {
     void quack();
 }

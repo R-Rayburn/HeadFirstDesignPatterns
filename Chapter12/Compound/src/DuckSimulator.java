@@ -4,6 +4,7 @@ import Composite.Flock;
 import Decorators.QuackCounter;
 import Factories.AbstractDuckFactory;
 import Factories.CountingDuckFactory;
+import Observer.Quackologist;
 
 public class DuckSimulator {
     public static void main(String[] args) {
@@ -46,6 +47,11 @@ public class DuckSimulator {
 
         System.out.println("\nDuck Simulator: Mallard Flock Simulation");
         simulate(flockOfMallards);
+
+        System.out.println("\nDuck Simulator: With Observer");
+        Quackologist quackologist = new Quackologist();
+        flockOfDucks.registerObserver(quackologist);
+        simulate(flockOfDucks);
 
         System.out.println("\nThe ducks quacked " + QuackCounter.getQuacks() + " times");
     }
