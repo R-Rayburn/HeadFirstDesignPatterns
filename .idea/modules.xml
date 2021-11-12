@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/Chapter07/Facade/Chapter7/Facade.iml" filepath="$PROJECT_DIR$/Chapter07/Facade/Chapter7/Facade.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/HeadFirstDesignPatterns.iml" filepath="$PROJECT_DIR$/.idea/HeadFirstDesignPatterns.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter09/Iterator/Iterator.iml" filepath="$PROJECT_DIR$/Chapter09/Iterator/Iterator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter12/MVC/MVC.iml" filepath="$PROJECT_DIR$/Chapter12/MVC/MVC.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter04/PizzaStore/PizzaStore.iml" filepath="$PROJECT_DIR$/Chapter04/PizzaStore/PizzaStore.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter11/Proxy/Proxy.iml" filepath="$PROJECT_DIR$/Chapter11/Proxy/Proxy.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter05/Singleton/Singleton.iml" filepath="$PROJECT_DIR$/Chapter05/Singleton/Singleton.iml" />
